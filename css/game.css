@@ -1,0 +1,85 @@
+@import url(style.css);
+
+body{
+    font-family: var(--pol);
+}
+
+#question{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.choice-container {
+    display: var(--fl);
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    width: var(--full);
+    border-radius: 4px;
+    background: var(--principale);
+    font-size: 1.2rem;
+    font-family: var(--pol);
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 98, 98, .6);
+    transition: transform 100ms;
+    transform: scale(1.02);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: #5FA88D;
+}
+
+.incorrect {
+    background: #110B2D;
+}
+
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid #5FA88D;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    margin: 0;
+    background: #5FA88D;
+    width: 0%;
+}
+
+
+
+@media screen and(max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}

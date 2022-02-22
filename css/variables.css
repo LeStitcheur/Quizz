@@ -1,0 +1,53 @@
+@import url(fonts.css);
+
+:root {
+
+    /*Couleurs*/
+
+    --principale: #D7545A;
+    --secondaire: #fffe94;
+    --tertiaire: #ab6f4a;
+    --body:#f0a07b;
+    --textColor: #2F3B65;
+
+    /*Tailles*/
+
+    --full: 100%;
+    --title: 2em;
+    --text: 1.2em;
+    --textMin: 0.8em;
+    --res: 0;
+    --margin: 50px;
+
+    /*Police*/
+
+    --pol: 'Poppins';
+    --up: uppercase;
+
+    /*Flex*/
+
+    --fl: flex;
+    --desk: row wrap;
+    --desk-nw: row nowrap;
+    --mob: column nowrap;
+    --cen: center;
+    --sa: space-around;
+    --sb: space-between;
+    --fs: flex-start;
+    --fe: flex-end;
+
+    /*Positions*/
+
+    --abs: absolute;
+    --fix: fixed;
+    --rel: relative;
+    --stick: sticky;
+
+
+    /*Autre*/
+
+    --no: none;
+    --cover: cover;
+    --point: pointer;
+
+}

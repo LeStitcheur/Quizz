@@ -1,0 +1,98 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(fonts.css);
+@import url(class.css);
+
+
+body{
+    width: var(--full);
+    min-height: 100vh;
+    background: var(--body);
+}
+
+.hardware {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.4rem;
+    font-family: 'Poppins';
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--textColor);
+    background: var(--principale);
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--textColor);
+    font-family: var(--pol);
+}
+
+.title {
+    background: var(--tertiaire);
+    padding: 1.2rem;
+    color: var(--secondaire);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--textColor);
+    font-family: var(--pol);
+}
+
+.container {
+    width: var(--full);
+    height: 100vh;
+    display: var(--fl);
+    justify-content: var(--cen);
+    align-items: var(--cen);
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    font-size: 2.4rem;
+    font-family: 'Poppins';
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--textColor);
+    background: var(--principale);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 98, 98, .6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: var(--secondaire);
+}
+
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4 1.4rem 0 rgba(255,255,0,.5);
+}
+
+
+.bxs-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
