@@ -2,6 +2,9 @@
 
 body{
     font-family: var(--pol);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #question{
@@ -11,38 +14,44 @@ body{
 
 .choice-container {
     display: var(--fl);
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
     width: var(--full);
+    height: var(--full);
     border-radius: 4px;
     background: var(--principale);
     font-size: 1.2rem;
     font-family: var(--pol);
-    min-width: 80rem;
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 98, 98, .6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(18,92,255);
     transition: transform 100ms;
     transform: scale(1.02);
 }
 
 .choice-prefix {
+    width: 10%;
     padding: 2rem 2.5rem;
+    color: var(--textColor);
+    border-right: 2px ridge var(--textColor);
 }
 
 .choice-text {
     padding: 2rem;
     width: 100%;
+    color: var(--textColor);
 }
 
 .correct {
-    background: #5FA88D;
+    background: var(--good);
 }
 
 .incorrect {
-    background: #110B2D;
+    background: var(--false);
 }
 
 
@@ -54,16 +63,18 @@ body{
 .hud-prefix {
     text-align: center;
     font-size: 2rem;
+    color: var(--textColor);
 }
 
 .hud-main-text {
     text-align: center;
+    color: var(--textColor);
 }
 
 #progressBar {
-    width: 20rem;
+    width: 80%;
     height: 3rem;
-    border: 0.2rem solid #5FA88D;
+    border: 0.2rem solid rgb(11,233,36);
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -72,7 +83,7 @@ body{
 #progressBarFull{
     height: 100%;
     margin: 0;
-    background: #5FA88D;
+    background: var(--good);
     width: 0%;
 }
 
@@ -80,6 +91,6 @@ body{
 
 @media screen and(max-width: 768px) {
     .choice-container {
-        min-width: 40rem;
+        min-width: 100%;
     }
 }

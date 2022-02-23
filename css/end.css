@@ -6,12 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 30rem;
 }
 
 input{
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    width: 20rem;
+    width: 80%;
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
@@ -24,7 +24,7 @@ input::placeholder {
 
 #username {
     margin-bottom: 3rem;
-    width: 100%;
+    width: 75%;
     outline: none;
 }
 
@@ -35,6 +35,13 @@ input::placeholder {
 
 #saveScoreBtn {
     border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: var(--desk);
+    justify-content: space-between;
+    align-items: center;
 }
 .bxs-home{
     margin-left: 1rem;

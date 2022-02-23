@@ -4,11 +4,13 @@
 
     /*Couleurs*/
 
-    --principale: #D7545A;
+    --principale: linear-gradient(90deg, rgb(18,92,255) 0%, rgb(0,102,255) 100%);
     --secondaire: #fffe94;
     --tertiaire: #ab6f4a;
-    --body:#f0a07b;
-    --textColor: #2F3B65;
+    --body:#292929;
+    --textColor: #fefefe;
+    --good: linear-gradient(32deg, rgb(11,233,36) 0%, rgb(41,232,111) 100%);
+    --false:linear-gradient(32deg, rgb(230,29,1) 0%, rgb(224,11,11) 100%);
 
     /*Tailles*/
 
