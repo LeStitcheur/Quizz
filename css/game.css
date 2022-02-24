@@ -86,7 +86,9 @@ body{
     background: var(--good);
     width: 0%;
 }
-
+.next {
+    display: none;
+}
 
 
 @media screen and(max-width: 768px) {

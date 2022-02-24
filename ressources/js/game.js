@@ -3,6 +3,12 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
+const btn = document.querySelector('#next');
+if(document.querySelector('#mode')){
+    let input = document.querySelector('#mode');
+    let mode = input.value;
+    let next = document.querySelector('.next');
+}
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -145,16 +151,26 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply)
 
-        setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
-        }, 1000)
+        if(mode.value === 'anim'){
+            document.querySelector('.next').style.display = "block"; 
+        }else{
+            
+            setTimeout(() => {
+                selectedChoice.parentElement.classList.remove(classToApply)
+                getNewQuestion()
+            }, 1000)
+        }
     })
+
+    
+    
 })
 
 incrementScore = num => {
     score+=num
     scoreText.innerText = score
 }
+
+
 
 startGame()
