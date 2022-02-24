@@ -191,7 +191,7 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply)
 
-        if(mode.value === 'anim'){
+        if(document.querySelector('#mode')){
             document.querySelector('.next').style.display = "block"; 
         }else{
             
@@ -208,8 +208,8 @@ choices.forEach(choice => {
 })
 
     
-
-
+if(document.querySelector('#mode')){
+    if(mode.value === 'anim'){
     btn.addEventListener('click', e => {
         const choice = document.querySelector('.correct') || document.querySelector('.incorrect')
 
@@ -219,7 +219,8 @@ choices.forEach(choice => {
         getNewQuestion()
         
     });
-
+}
+}
     incrementScore = num => {
     score+=num
     scoreText.innerText = score
