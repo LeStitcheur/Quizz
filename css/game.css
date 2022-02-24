@@ -10,6 +10,7 @@ body{
 #question{
     margin-top: 2rem;
     margin-bottom: 1rem;
+    width: 80vw;
 }
 
 .choice-container {
