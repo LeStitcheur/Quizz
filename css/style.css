@@ -36,7 +36,7 @@ h1 {
 .title {
     background: var(--tertiaire);
     padding: 1.2rem;
-    color: var(--secondaire);
+    color: var(--textColor);
 }
 
 h2 {

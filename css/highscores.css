@@ -18,7 +18,7 @@ li {
     font-size: 2rem;
     padding: 1rem;
     font-family: var(--pol);
-    color: var(--secondaire);
+    color: var(--textColor);
     background: var(--tertiaire);
 }
 
