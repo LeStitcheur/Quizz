@@ -35,7 +35,7 @@ let questions = [
         answer: 2,
     },
     {
-        question: 'Devinette :  Je suis petit et carré. J\'ai des picots dorés. Je permet d\'éxécuter plusieur processus en même temps. Qui suis-je ?',
+        question: 'Devinette :  Je suis petit et carré. J\'ai des picots dorés. Je permet d\'éxécuter plusieurs processus en même temps. Qui suis-je ?',
         choice1: 'Barette de RAM',
         choice2: 'Processeur',
         choice3: 'Disque Dur',
@@ -55,7 +55,7 @@ let questions = [
         choice1: 'Barette de Ram',
         choice2: 'Ventirad',
         choice3: 'Pile',
-        choice4: 'Condansateur',
+        choice4: 'Condensateur',
         answer: 3,
     },
     {
@@ -97,11 +97,50 @@ let questions = [
         choice3: 'Souris',
         choice4: 'Micro',
         answer: 3,
+    },
+    {
+        question: 'Que signifie le o dans l\'abréviation "Go" ?',
+        choice1: 'Octave',
+        choice2: 'Oversize',
+        choice3: 'Octogone',
+        choice4: 'Octet',
+        answer: 4,
+    },
+    {
+        question: 'Qu\'est-ce qu\'un octet ?',
+        choice1: '1 bit',
+        choice2: '8 bits',
+        choice3: '16 bits',
+        choice4: 'Hobbit',
+        answer: 2,
+    },
+    {
+        question: 'Que veut dire PC ?',
+        choice1: 'Pain au Chocolat',
+        choice2: 'Portable Computer',
+        choice3: 'Private Computer',
+        choice4: 'Personnal Computer',
+        answer: 3,
+    },
+    {
+        question: 'Qu\'est-ce qu\'un MOSFET ?',
+        choice1: 'Un transistor',
+        choice2: 'Une résistance',
+        choice3: 'Un rappeur célèbre',
+        choice4: 'Un condensateur',
+        answer: 1,
+    },{
+        question: 'Que signifie PSU ?',
+        choice1: 'Powerfull Service United',
+        choice2: 'Parti Socialiste Unifié',
+        choice3: 'Power Supply Unit',
+        choice4: 'Paris Séville Ukraine',
+        answer: 3,
     }
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 10
+const MAX_QUESTIONS = 15
 
 startGame = () => {
     questionCounter = 0
@@ -160,13 +199,20 @@ choices.forEach(choice => {
                 getNewQuestion()
             }, 1000)
         }
+        btn.addEventListener('click', e => {
+        selectedChoice.parentElement.classList.remove(classToApply)
+        getNewQuestion();
+        
+    });
     })
 
     
     
 })
 
-incrementScore = num => {
+
+
+    incrementScore = num => {
     score+=num
     scoreText.innerText = score
 }

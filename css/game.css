@@ -60,6 +60,18 @@ body{
     justify-content: space-between;
 }
 
+.go {
+    width: var(--full);
+    height: var(--full);
+    border-radius: 4px;
+    border: none;
+    background: var(--principale);
+    font-size: 1.2rem;
+    font-family: var(--pol);
+    cursor: pointer;
+    color: #FFF;
+}
+
 .hud-prefix {
     text-align: center;
     font-size: 2rem;
