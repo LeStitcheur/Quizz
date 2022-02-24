@@ -120,7 +120,7 @@ let questions = [
         choice2: 'Portable Computer',
         choice3: 'Private Computer',
         choice4: 'Personnal Computer',
-        answer: 3,
+        answer: 4,
     },
     {
         question: 'Qu\'est-ce qu\'un MOSFET ?',
@@ -172,6 +172,7 @@ getNewQuestion = () => {
 
     acceptingAnswers = true
 
+
 }
 
 choices.forEach(choice => {
@@ -199,18 +200,25 @@ choices.forEach(choice => {
                 getNewQuestion()
             }, 1000)
         }
-        btn.addEventListener('click', e => {
-        selectedChoice.parentElement.classList.remove(classToApply)
-        getNewQuestion();
         
-    });
     })
 
     
     
 })
 
+    
 
+
+    btn.addEventListener('click', e => {
+        const choice = document.querySelector('.correct') || document.querySelector('.incorrect')
+
+        choice.classList.remove('correct')
+        choice.classList.remove('incorrect')
+        document.querySelector('.next').style.display = 'none'
+        getNewQuestion()
+        
+    });
 
     incrementScore = num => {
     score+=num
