@@ -75,12 +75,12 @@ let questions = [
     },
     {
         question: 'Quel instrument reconnaissez vous ?',
-        song: 'none',
+        song: 'media/mp3/flute.mp3',
         choice1: 'Piano',
         choice2: 'Violon',
         choice3: 'Flûte',
         choice4: 'Harmonica',
-        answer: 2,
+        answer: 3,
     }
 ]
 
