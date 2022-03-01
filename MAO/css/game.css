@@ -1,4 +1,4 @@
-@import url(style.css);
+@import url(../../css/style.css);
 
 body{
     font-family: var(--pol);
@@ -29,7 +29,10 @@ body{
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(18,92,255);
+    background: var(--secondaire);
+    box-shadow: 0 0.4rem 1.4rem 0 var(--secondaire);
+    filter: drop-shadow(0 0 20px var(--secondaire)) drop-shadow(0 0 40px var(--secondaire)) drop-shadow(0 0 60px var(--secondaire));
+
     transition: transform 100ms;
     transform: scale(1.02);
 }
