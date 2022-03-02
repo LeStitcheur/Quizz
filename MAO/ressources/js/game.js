@@ -126,6 +126,15 @@ let questions = [
         choice3: 'Naps',
         choice4: 'Nasa',
         answer: 3,
+    },
+    {
+        question: 'De quel anime vient cet opening ?',
+        song: 'media/mp3/snk.mp3',
+        choice1: 'Naruto',
+        choice2: 'Demon Slayer',
+        choice3: 'SNK (Attaque des titans)',
+        choice4: 'Death Notes',
+        answer: 3,
     }
 
 ]

@@ -21,7 +21,7 @@ let questions = [
     {
         question: 'Comment exprime-t-on la capacité d\'un disque dur ?',
         choice1: 'En Mo',
-        choice2: 'En o',
+        choice2: 'En Y',
         choice3: 'En Ko',
         choice4: 'En Go',
         answer: 4,
