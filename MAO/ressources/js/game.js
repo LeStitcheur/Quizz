@@ -81,11 +81,57 @@ let questions = [
         choice3: 'Flûte',
         choice4: 'Harmonica',
         answer: 3,
+    },
+    {
+        question: 'Qu\'est-ce qu\'un DAW ?',
+        song: 'none',
+        choice1: 'Drive Allegro Workout',
+        choice2: 'Digital Audio Workstation',
+        choice3: 'Driver Audiotechnical Work',
+        choice4: 'Un zèbre',
+        answer: 2,
+    },
+    {
+        question: 'Quel artiste chante cette chanson ?',
+        song: 'media/mp3/gims.mp3',
+        choice1: 'Maître Gym',
+        choice2: 'Maître Gims',
+        choice3: 'Maître Yoda',
+        choice4: 'Maître Capello',
+        answer: 2,
+    },
+    {
+        question: 'Quel groupe chante cette chanson ?',
+        song: 'media/mp3/imagine.mp3',
+        choice1: 'Imagine Dragon',
+        choice2: 'Imagine Licorne',
+        choice3: 'Imagine Cerbère',
+        choice4: 'Imagine All The People',
+        answer: 1,
+    },
+    {
+        question: 'Quel groupe chante cette chanson ?',
+        song: 'media/mp3/muse.mp3',
+        choice1: 'Fuse',
+        choice2: 'Buse',
+        choice3: 'Muse',
+        choice4: 'Beattles',
+        answer: 3,
+    },
+    {
+        question: 'Quel artiste chante cette chanson ?',
+        song: 'media/mp3/nasa.mp3',
+        choice1: 'Soprano',
+        choice2: 'Lacrim',
+        choice3: 'Naps',
+        choice4: 'Nasa',
+        answer: 3,
     }
+
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 15
+const MAX_QUESTIONS = 12
 
 startGame = () => {
     questionCounter = 0
