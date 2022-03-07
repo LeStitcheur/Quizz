@@ -120,7 +120,7 @@ let questions = [
     },
     {
         question: 'Quel artiste chante cette chanson ?',
-        song: 'media/mp3/nasa.mp3',
+        song: 'media/mp3/naza.mp3',
         choice1: 'Soprano',
         choice2: 'Lacrim',
         choice3: 'Naps',

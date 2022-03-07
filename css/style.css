@@ -22,7 +22,9 @@ body{
     align-items: center;
 }
 
-.hardware, .mao {
+.hardware,
+.mao,
+.devWeb {
     font-size: 2.4rem;
     font-family: 'Poppins';
     padding: 2rem 0;
@@ -37,7 +39,8 @@ body{
 }
 
 .hardware:hover,
-.mao:hover{
+.mao:hover,
+.devWeb:hover{
     background: var(--secondaire);
     filter: drop-shadow(0 0 20px var(--secondaire)) drop-shadow(0 0 40px var(--secondaire)) drop-shadow(0 0 60px var(--secondaire));
 
